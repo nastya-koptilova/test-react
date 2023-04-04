@@ -5,6 +5,22 @@ import { CustomersItem } from "../CustomersItem/CustomersItem";
 export const CustomersList = ({ user }) => {
   const [members, setMembers] = useState(customers);
   const [search, setSearch] = useState("");
+
+  const searchContact = (event) => {
+    const value = event.target.value;
+    setSearch(value);
+  };
+
+  const filterContact = members.filter((el) => {
+    const arr = Object.values(el);
+    if (
+      arr.some((el) => el.toLowerCase().includes(search.toLowerCase().trim()))
+    ) {
+      return el;
+    }
+  });
+
+  
   return (
     <div>
       <p>
@@ -16,7 +32,7 @@ export const CustomersList = ({ user }) => {
             <h3>All Customers</h3>
             <p>Active Members</p>
           </div>
-          <input type="text" />
+          <input type="text" onChange={searchContact} />
         </div>
         <table>
           <thead>
@@ -30,7 +46,7 @@ export const CustomersList = ({ user }) => {
             </tr>
           </thead>
           <tbody>
-            {members.map(
+            {filterContact.map(
               ({ name, company, country, phone, id, email, status }) => (
                 <CustomersItem
                   key={id}
