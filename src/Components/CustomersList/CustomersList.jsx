@@ -6,12 +6,12 @@ export const CustomersList = ({ user }) => {
   const [members, setMembers] = useState(customers);
   const [search, setSearch] = useState("");
 
-  const searchContact = (event) => {
+  const handleSearchCustomers = (event) => {
     const value = event.target.value;
     setSearch(value);
   };
 
-  const filterContact = members.filter((el) => {
+  const filtredCustomers = members.filter((el) => {
     const arr = Object.values(el);
     if (
       arr.some((el) => el.toLowerCase().includes(search.toLowerCase().trim()))
@@ -20,7 +20,6 @@ export const CustomersList = ({ user }) => {
     }
   });
 
-  
   return (
     <div>
       <p>
@@ -32,7 +31,7 @@ export const CustomersList = ({ user }) => {
             <h3>All Customers</h3>
             <p>Active Members</p>
           </div>
-          <input type="text" onChange={searchContact} />
+          <input type="text" onChange={handleSearchCustomers} />
         </div>
         <table>
           <thead>
@@ -46,7 +45,7 @@ export const CustomersList = ({ user }) => {
             </tr>
           </thead>
           <tbody>
-            {filterContact.map(
+            {filtredCustomers.map(
               ({ name, company, country, phone, id, email, status }) => (
                 <CustomersItem
                   key={id}
