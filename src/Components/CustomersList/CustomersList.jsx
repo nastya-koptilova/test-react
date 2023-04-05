@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import customers from "../../data/customers.json";
 import { CustomersItem } from "../CustomersItem/CustomersItem";
 import { UserGreetings } from "../UserGreetings/UserGreetings";
+import s from "./CustomersList.module.scss";
+import { ReactComponent as SearchIcon } from "../../images/search-icon.svg";
 
 export const CustomersList = ({ user }) => {
   const [members, setMembers] = useState(customers);
@@ -22,17 +24,23 @@ export const CustomersList = ({ user }) => {
   });
 
   return (
-    <div>
-      <UserGreetings name={user.name}/>
-      <div>
-        <div>
-          <div>
-            <h3>All Customers</h3>
-            <p>Active Members</p>
-          </div>
-          <input type="text" onChange={handleSearchCustomers} />
+    <div className={s.customers}>
+      <UserGreetings name={user.name} />
+      <div className={s.customers__container}>
+        <div className={s.customers__description_container}>
+          <h3 className={s.customers__title}>All Customers</h3>
+          <p className={s.customers__description}>Active Members</p>
+          <label className={s.customers__search}>
+            {/* <SearchIcon/> */}
+            <input
+              className={s.customers__search_input}
+              type="text"
+              onChange={handleSearchCustomers}
+              placeholder="Search"
+            />
+          </label>
         </div>
-        <table>
+        <table className={s.customers__table}>
           <thead>
             <tr>
               <th>Customer Name</th>
