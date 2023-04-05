@@ -41,41 +41,6 @@
   }
 }
 
-.customers__search {
-  position: absolute;
-  top: 44px;
-  right: 53px;
-  &::before {
-    content: url(../../../public/assets/images/search-icon.svg);
-    position: absolute;
-    top: 6px;
-    left: 8px;
-  }
-
-  @media screen and (max-width: 884px) {
-    top: 95px;
-    right: 70px;
-  }
-}
-
-.customers__search_input {
-  width: 216px;
-  height: 38px;
-  background: #f9fbff;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  padding: 10px 10px 10px 40px;
-
-  &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: -0.01em;
-    color: #b5b7c0;
-  }
-}
-
 .customers__table {
   margin-top: 40px;
   table-layout: fixed;

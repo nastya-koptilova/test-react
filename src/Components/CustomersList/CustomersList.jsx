@@ -3,6 +3,7 @@ import customers from "../../data/customers.json";
 import { CustomersItem } from "../CustomersItem/CustomersItem";
 import { UserGreetings } from "../UserGreetings/UserGreetings";
 import s from "./CustomersList.module.scss";
+import { CustomersSearch } from "../CustomersSearch/CustomersSearch";
 
 export const CustomersList = ({ user }) => {
   const [search, setSearch] = useState("");
@@ -28,14 +29,7 @@ export const CustomersList = ({ user }) => {
         <div className={s.customers__description_container}>
           <h3 className={s.customers__title}>All Customers</h3>
           <p className={s.customers__description}>Active Members</p>
-          <label className={s.customers__search}>
-            <input
-              className={s.customers__search_input}
-              type="text"
-              onChange={handleSearchCustomers}
-              placeholder="Search"
-            />
-          </label>
+          <CustomersSearch onChange={handleSearchCustomers}/>
         </div>
         <table className={s.customers__table}>
           <thead>
