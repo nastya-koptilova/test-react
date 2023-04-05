@@ -4,6 +4,8 @@ import { CustomersItem } from "../CustomersItem/CustomersItem";
 import { UserGreetings } from "../UserGreetings/UserGreetings";
 import s from "./CustomersList.module.scss";
 import { CustomersSearch } from "../CustomersSearch/CustomersSearch";
+import { CustomersTable } from "../CustomersTable/CustomersTable";
+import { PaginationBtn } from "../PaginationBtn/PaginationBtn";
 
 export const CustomersList = ({ user }) => {
   const [search, setSearch] = useState("");
@@ -31,64 +33,12 @@ export const CustomersList = ({ user }) => {
           <p className={s.customers__description}>Active Members</p>
           <CustomersSearch onChange={handleSearchCustomers}/>
         </div>
-        <table className={s.customers__table}>
-          <thead>
-            <tr className={s.customers__table_head}>
-              <th>Customer Name</th>
-              <th>Company</th>
-              <th>Phone Number</th>
-              <th>Email</th>
-              <th>Country</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filtredCustomers.map(
-              ({ name, company, country, phone, id, email, status }) => (
-                <CustomersItem
-                  key={id}
-                  name={name}
-                  company={company}
-                  country={country}
-                  phone={phone}
-                  email={email}
-                  status={status}
-                />
-              )
-            )}
-          </tbody>
-        </table>
+        <CustomersTable searchValue={search}/>
         <div className={s.customers__pages}>
           <p className={s.customers__pages_text}>
             Showing data 1 to 8 of 256K entries
           </p>
-          <div className={s.customers__pages_pagination}>
-            <button className={s.customers__pages_pagination_btn} type="button">
-              &lt;
-            </button>
-            <button
-              className={`${s.customers__pages_pagination_btn} ${s.customers__pages_pagination_btn_active}`}
-              type="button"
-            >
-              1
-            </button>
-            <button className={s.customers__pages_pagination_btn} type="button">
-              2
-            </button>
-            <button className={s.customers__pages_pagination_btn} type="button">
-              3
-            </button>
-            <button className={s.customers__pages_pagination_btn} type="button">
-              4
-            </button>
-            <p className={s.customers__pages_pagination_etc}>...</p>
-            <button className={s.customers__pages_pagination_btn} type="button">
-              40
-            </button>
-            <button className={s.customers__pages_pagination_btn} type="button">
-              &gt;
-            </button>
-          </div>
+          <PaginationBtn/>
         </div>
       </div>
     </div>
