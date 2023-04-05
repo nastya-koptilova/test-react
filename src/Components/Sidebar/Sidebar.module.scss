@@ -50,3 +50,26 @@
     background-image: url("../../../public/assets/images/dashboard-link-icon.svg");
   }
 }
+
+.menu_button {
+    position: relative;
+    border: none;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    z-index: 2;
+    margin-top: 48px;
+    outline: none;
+  }
+  
+  .menu_button__close {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media screen and (min-width: 767px) {
+    .menu_button {
+      margin-right: 11px;
+    }
+  }

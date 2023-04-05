@@ -11,17 +11,17 @@ export const CustomersItem = ({
 }) => {
   return (
     <tr className={s.customers__table_body}>
-      <td>{name}</td>
-      <td>{company}</td>
-      <td>{phone}</td>
-      <td>{email}</td>
-      <td>{country}</td>
+      <td data-th="Customer Name">{name}</td>
+      <td data-th="Company">{company}</td>
+      <td data-th="Phone Number">{phone}</td>
+      <td data-th="Email">{email}</td>
+      <td data-th="Country">{country}</td>
       {status === "active" ? (
-        <td>
+        <td data-th="Status">
           <p className={s.customers__table_body_active}>{status}</p>
         </td>
       ) : (
-        <td>
+        <td data-th="Status">
           <p className={s.customers__table_body_inactive}>{status}</p>
         </td>
       )}
