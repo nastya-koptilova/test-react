@@ -3,7 +3,6 @@ import customers from "../../data/customers.json";
 import { CustomersItem } from "../CustomersItem/CustomersItem";
 import { UserGreetings } from "../UserGreetings/UserGreetings";
 import s from "./CustomersList.module.scss";
-import { ReactComponent as SearchIcon } from "../../images/search-icon.svg";
 
 export const CustomersList = ({ user }) => {
   const [members, setMembers] = useState(customers);
@@ -31,7 +30,6 @@ export const CustomersList = ({ user }) => {
           <h3 className={s.customers__title}>All Customers</h3>
           <p className={s.customers__description}>Active Members</p>
           <label className={s.customers__search}>
-            {/* <SearchIcon/> */}
             <input
               className={s.customers__search_input}
               type="text"
