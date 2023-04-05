@@ -16,11 +16,6 @@
   transform: translateX(-200%);
 }
 
-.sidebar {
-  background-color: #ffffff;
-  padding: 36px 28px 76px 28px;
-}
-
 .sidebarList__title {
   margin-top: 64px;
   font-weight: 500;
@@ -53,6 +48,5 @@
 }
 
 .backdrop_hidden {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
