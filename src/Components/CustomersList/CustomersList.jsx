@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import customers from "../../data/customers.json";
-import { CustomersItem } from "../CustomersItem/CustomersItem";
 import { UserGreetings } from "../UserGreetings/UserGreetings";
 import s from "./CustomersList.module.scss";
 import { CustomersSearch } from "../CustomersSearch/CustomersSearch";
@@ -14,15 +12,6 @@ export const CustomersList = ({ user }) => {
     const value = event.target.value;
     setSearch(value);
   };
-
-  const filtredCustomers = customers.filter((el) => {
-    const arr = Object.values(el);
-    if (
-      arr.some((el) => el.toLowerCase().includes(search.toLowerCase().trim()))
-    ) {
-      return el;
-    }
-  });
 
   return (
     <div className={s.customers}>
