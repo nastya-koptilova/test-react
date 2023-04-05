@@ -16,6 +16,8 @@
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #9197b3;
+  -webkit-transition: background-color 350ms ease;
+  -o-transition: background-color 350ms ease;
   transition: background-color 350ms ease;
 
   &:hover,
@@ -50,8 +52,14 @@
 }
 
 .sidebar__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -64,7 +72,11 @@
 }
 
 .sidebar__link_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
