@@ -1,0 +1,46 @@
+.sidebar__list {
+  margin-bottom: 597px;
+}
+
+.sidebar__item {
+  height: 46px;
+  padding: 11px 8px 11px 11px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #9197b3;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+.sidebar__item_active {
+  background-color: #5932ea;
+  border-radius: 8px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar__link_text {
+  margin-left: 14px;
+}
+
+.sidebar__link_text_active {
+  color: #ffffff;
+}
+
+.sidebar__link_container {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__icon_arrow_active path {
+  stroke: #ffffff;
+}
