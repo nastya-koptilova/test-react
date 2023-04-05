@@ -6,16 +6,20 @@
 
 body {
   margin: 0;
-  padding-left: 27px;
+  padding-left: 5px;
   font-family: "Poppins", sans-serif;
   background-color: #fafbff;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (min-width: 1279px) {
+    padding-left: 27px;
+  }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -25,7 +29,8 @@ img {
   height: auto;
 }
 
-li, ul {
+li,
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -36,7 +41,10 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 

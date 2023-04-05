@@ -13,11 +13,13 @@
 
 .customers__description_container {
   padding-left: 38px;
+
   @media screen and (max-width: 884px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 0px;
+    position: relative;
   }
 }
 
@@ -37,7 +39,7 @@
   color: #16c098;
 
   @media screen and (max-width: 884px) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -46,6 +48,7 @@
   justify-content: space-between;
   padding-left: 38px;
   padding-right: 40px;
+
   @media screen and (max-width: 884px) {
     flex-direction: column;
     align-items: center;

@@ -1,3 +1,16 @@
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .backdrop_hidden {
+    display: none;
+  }
+
 .modal {
   position: fixed;
   background-color: #ffffff;
@@ -12,7 +25,8 @@
   transform: translateX(0);
   transition: transform 450ms ease;
 }
-.transition {
+
+.modal_transition {
   transform: translateX(-200%);
 }
 
@@ -36,17 +50,4 @@
     height: 24px;
     background-image: url("../../../public/assets/images/dashboard-link-icon.svg");
   }
-}
-
-.backdrop {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.5);
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.backdrop_hidden {
-  display: none;
 }

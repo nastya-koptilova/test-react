@@ -37,7 +37,7 @@ export const ModalMenu = ({ onClose, isModalOpen, user }) => {
         onClick={handleBackdropClick}
         className={isModalOpen ? s.backdrop : s.backdrop_hidden}
       >
-        <div className={isModalOpen ? s.modal : s.transition}>
+        <div className={isModalOpen ? s.modal : s.modal_transition}>
           <h3 className={s.sidebarList__title}>Dashboard</h3>
           <SidebarLink />
           <SidebarUserInfo user={user} />

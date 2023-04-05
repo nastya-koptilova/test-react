@@ -3,15 +3,17 @@ import customers from "../../data/customers.json";
 import { CustomersItem } from "../CustomersItem/CustomersItem";
 import s from "./CustomersTable.module.scss";
 
-export const CustomersTable = ({searchValue}) => {
-    const filtredCustomers = customers.filter((el) => {
-        const arr = Object.values(el);
-        if (
-          arr.some((el) => el.toLowerCase().includes(searchValue.toLowerCase().trim()))
-        ) {
-          return el;
-        }
-      });
+export const CustomersTable = ({ searchValue }) => {
+  const filtredCustomers = customers.filter((el) => {
+    const arr = Object.values(el);
+    if (
+      arr.some((el) =>
+        el.toLowerCase().includes(searchValue.toLowerCase().trim())
+      )
+    ) {
+      return el;
+    }
+  });
   return (
     <table className={s.customers__table}>
       <thead>

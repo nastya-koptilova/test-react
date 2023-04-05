@@ -34,19 +34,20 @@
     @media screen and (max-width: 884px) {
       display: block;
       &::before {
-        content: attr(data-th)": ";
+        content: attr(data-th) ": ";
         font-weight: bold;
+      }
+      &:first-child {
+        padding-left: 0px;
+      }
+      &:last-child {
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 0px;
+      }
     }
-    &:first-child {
-      padding-left: 0px;
-    }
-    &:last-child {
-      text-align: center;
-      padding-top: 0px;
-      padding-right: 0px;
-    }
-    }
-} }
+  }
+}
 
 .customers__table_body_active,
 .customers__table_body_inactive {
