@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { UserGreetings } from "../UserGreetings/UserGreetings";
-import s from "./CustomersList.module.scss";
 import { CustomersSearch } from "../CustomersSearch/CustomersSearch";
 import { CustomersTable } from "../CustomersTable/CustomersTable";
 import { PaginationBtn } from "../PaginationBtn/PaginationBtn";
+import s from "./CustomersList.module.scss";
 
 export const CustomersList = ({ user }) => {
   const [search, setSearch] = useState("");

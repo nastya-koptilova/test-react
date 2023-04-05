@@ -1,7 +1,7 @@
 import React from "react";
 import customers from "../../data/customers.json";
-import s from "./CustomersTable.module.scss";
 import { CustomersItem } from "../CustomersItem/CustomersItem";
+import s from "./CustomersTable.module.scss";
 
 export const CustomersTable = ({searchValue}) => {
     const filtredCustomers = customers.filter((el) => {

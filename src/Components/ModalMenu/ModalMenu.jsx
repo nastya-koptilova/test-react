@@ -1,8 +1,8 @@
 import { createPortal } from "react-dom";
 import { useEffect } from "react";
-import s from "./ModalMenu.module.scss";
 import { SidebarLink } from "../SidebarLink/SidebarLink";
 import { SidebarUserInfo } from "../SidebarUserInfo/SidebarUserInfo";
+import s from "./ModalMenu.module.scss";
 
 const modalRoot = document.querySelector("#modal-root");
 

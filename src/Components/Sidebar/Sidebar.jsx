@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useWindowSize } from "react-use";
 import { SidebarLink } from "../SidebarLink/SidebarLink";
 import { SidebarUserInfo } from "../SidebarUserInfo/SidebarUserInfo";
-import s from "./Sidebar.module.scss";
 import { ModalMenu } from "../ModalMenu/ModalMenu";
 import { ReactComponent as BurgerIcon } from "../../images/burger.svg";
 import { ReactComponent as CloseIcon } from "../../images/close.svg";
+import s from "./Sidebar.module.scss";
 
 export const Sidebar = ({ user }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
