@@ -6,10 +6,10 @@ This is the README file for the CRM Dashboard Customers Website, created by Nast
 
 To install this website on your local machine, follow these steps:
 
-1. Clone the repository: git clone [https://github.com/nastya-koptilova/test-react.git]
+1. Clone the repository: git clone https://github.com/nastya-koptilova/test-react.git
 2. Install the necessary dependencies: npm install
 3. Start the development server: npm start
-4. Open the website in your browser at [http://localhost:3000]
+4. Open the website in your browser at http://localhost:3000
 
 ## Usage
 
