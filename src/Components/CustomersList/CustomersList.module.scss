@@ -13,7 +13,7 @@
 
 .customers__description_container {
   padding-left: 38px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 884px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@
   letter-spacing: -0.01em;
   color: #16c098;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 884px) {
     margin-bottom: 20px;
   }
 }
@@ -52,7 +52,7 @@
     left: 8px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 884px) {
     top: 95px;
     right: 70px;
   }
@@ -82,7 +82,7 @@
   border-collapse: collapse;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 884px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -126,7 +126,7 @@
       text-align: center;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 884px) {
       display: none;
     }
   }
@@ -137,7 +137,7 @@
   justify-content: space-between;
   padding-left: 38px;
   padding-right: 40px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 884px) {
     flex-direction: column;
     align-items: center;
     gap: 20px;

@@ -2,7 +2,7 @@
   position: relative;
   border-bottom: 1px solid #eeeeee;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 884px) {
     border-bottom: none;
     &:after {
       content: "";
@@ -31,7 +31,7 @@
       padding-right: 40px;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 884px) {
       display: block;
       &::before {
         content: attr(data-th)": ";
@@ -57,7 +57,7 @@
   text-align: center;
   text-transform: capitalize;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 884px) {
     margin-right: auto;
     margin-left: auto;
   }
