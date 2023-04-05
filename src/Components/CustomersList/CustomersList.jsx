@@ -40,7 +40,7 @@ export const CustomersList = ({ user }) => {
         </div>
         <table className={s.customers__table}>
           <thead>
-            <tr>
+            <tr className={s.customers__table_head}>
               <th>Customer Name</th>
               <th>Company</th>
               <th>Phone Number</th>

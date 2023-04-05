@@ -16,7 +16,8 @@
     "email": "floyd@yahoo.com",
     "country": "Kiribati",
     "status": "inactive"
-  },{
+  },
+  {
     "id": "3",
     "name": "Ronald Richards",
     "company": "Adobe",
@@ -24,7 +25,8 @@
     "email": "ronald@adobe.com",
     "country": "Israel",
     "status": "inactive"
-  },{
+  },
+  {
     "id": "4",
     "name": "Marvin McKinney",
     "company": "Tesla",
@@ -32,7 +34,8 @@
     "email": "marvin@tesla.com",
     "country": "Iran",
     "status": "active"
-  },{
+  },
+  {
     "id": "5",
     "name": "Jerome Bell",
     "company": "Google",
@@ -40,7 +43,8 @@
     "email": "jerome@google.com",
     "country": "Réunion",
     "status": "active"
-  },{
+  },
+  {
     "id": "6",
     "name": "Kathryn Murphy",
     "company": "Microsoft",
@@ -48,7 +52,8 @@
     "email": "kathryn@microsoft.com",
     "country": "Curaçao",
     "status": "active"
-  },{
+  },
+  {
     "id": "7",
     "name": "Jacob Jones",
     "company": "Yahoo",
@@ -56,13 +61,14 @@
     "email": "jacob@yahoo.com",
     "country": "Brazil",
     "status": "active"
-  },{
+  },
+  {
     "id": "8",
     "name": "Kristin Watson",
     "company": "Facebook",
     "phone": "(704) 555-0127",
     "email": "kristin@facebook.com",
     "country": "Åland Islands",
-    "status": "active"
+    "status": "inactive"
   }
 ]

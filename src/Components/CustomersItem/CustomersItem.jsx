@@ -1,4 +1,5 @@
 import React from "react";
+import s from "./CustomersItem.module.scss";
 
 export const CustomersItem = ({
   name,
@@ -9,13 +10,21 @@ export const CustomersItem = ({
   company,
 }) => {
   return (
-    <tr>
+    <tr className={s.customers__table_body}>
       <td>{name}</td>
       <td>{company}</td>
       <td>{phone}</td>
       <td>{email}</td>
       <td>{country}</td>
-      <td>{status}</td>
+      {status === "active" ? (
+        <td>
+          <p className={s.customers__table_body_active}>{status}</p>
+        </td>
+      ) : (
+        <td>
+          <p className={s.customers__table_body_inactive}>{status}</p>
+        </td>
+      )}
     </tr>
   );
 };
