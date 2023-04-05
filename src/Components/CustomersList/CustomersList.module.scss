@@ -173,6 +173,12 @@
   &:not(:last-child) {
     margin-right: 12px;
   }
+
+  &:hover,
+  :focus {
+    background: #5932ea;
+    color: #ffffff;
+  }
 }
 
 .customers__pages_pagination_btn_active {
