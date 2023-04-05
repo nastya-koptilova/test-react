@@ -6,8 +6,10 @@
 
 body {
   margin: 0;
+  padding-left: 27px;
   font-family: "Poppins", sans-serif;
   background-color: #fafbff;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,4 +29,13 @@ li, ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0;
 }
