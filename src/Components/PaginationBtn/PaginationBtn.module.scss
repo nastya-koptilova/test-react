@@ -1,5 +1,9 @@
 .customers__pages_pagination {
   display: flex;
+  @media screen and (max-width: 400px) {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }
 
 .customers__pages_pagination_btn {
@@ -16,8 +20,18 @@
   text-align: center;
   color: #404b52;
 
+  @media screen and (max-width: 400px) {
+    width: 22px;
+    height: 20px;
+    font-size: 8px;
+  }
+
   &:not(:last-child) {
     margin-right: 12px;
+
+    @media screen and (max-width: 400px) {
+      margin-right: 5px;
+    }
   }
 
   &:hover,
@@ -34,4 +48,9 @@
 
 .customers__pages_pagination_etc {
   margin-right: 12px;
+
+  @media screen and (max-width: 400px) {
+    margin-right: 5px;
+    font-size: 8px;
+  }
 }

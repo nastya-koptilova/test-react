@@ -46,6 +46,13 @@
         padding-right: 0px;
       }
     }
+
+    @media screen and (max-width: 400px) {
+      font-size: 8px;
+      line-height: 12px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -61,6 +68,10 @@
   @media screen and (max-width: 884px) {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 60px;
   }
 }
 
