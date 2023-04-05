@@ -13,7 +13,6 @@
   transition: transform 450ms ease;
 }
 .transition {
-  composes: modal;
   transform: translateX(-200%);
 }
 

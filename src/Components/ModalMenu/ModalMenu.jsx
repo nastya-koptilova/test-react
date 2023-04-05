@@ -29,7 +29,7 @@ export const ModalMenu = ({ onClose, isModalOpen, user }) => {
     return () => {
       window.removeEventListener("keydown", onModalClose);
     };
-  }, [onClose]);
+  }, [onClose, isModalOpen]);
 
   return createPortal(
     <>

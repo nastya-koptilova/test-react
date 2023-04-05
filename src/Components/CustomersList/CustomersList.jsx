@@ -5,7 +5,6 @@ import { UserGreetings } from "../UserGreetings/UserGreetings";
 import s from "./CustomersList.module.scss";
 
 export const CustomersList = ({ user }) => {
-  const [members, setMembers] = useState(customers);
   const [search, setSearch] = useState("");
 
   const handleSearchCustomers = (event) => {
@@ -13,7 +12,7 @@ export const CustomersList = ({ user }) => {
     setSearch(value);
   };
 
-  const filtredCustomers = members.filter((el) => {
+  const filtredCustomers = customers.filter((el) => {
     const arr = Object.values(el);
     if (
       arr.some((el) => el.toLowerCase().includes(search.toLowerCase().trim()))
