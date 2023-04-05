@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import customers from "../../data/customers.json";
 import { CustomersItem } from "../CustomersItem/CustomersItem";
+import { UserGreetings } from "../UserGreetings/UserGreetings";
 
 export const CustomersList = ({ user }) => {
   const [members, setMembers] = useState(customers);
@@ -22,9 +23,7 @@ export const CustomersList = ({ user }) => {
 
   return (
     <div>
-      <p>
-        Hello, <span>{user.name}</span>,
-      </p>
+      <UserGreetings name={user.name}/>
       <div>
         <div>
           <div>
