@@ -15,11 +15,12 @@
   letter-spacing: -0.01em;
   color: #9197b3;
   position: relative;
+  border-radius: 8px;
+  transition: background-color 350ms ease;
 
   &:hover,
   :focus {
     background-color: #5932ea;
-    border-radius: 8px;
     cursor: pointer;
 
     .sidebar__icon path {
