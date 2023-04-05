@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# CRM Dashboard Customers Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the README file for the CRM Dashboard Customers Website, created by Nastya Koptilova. This website is a simple React application that displays a list of customers in CRM and allows the user to filter customers.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To install this website on your local machine, follow these steps:
 
-### `npm start`
+1. Clone the repository: git clone [https://github.com/nastya-koptilova/test-react.git]
+2. Install the necessary dependencies: npm install
+3. Start the development server: npm start
+4. Open the website in your browser at [http://localhost:3000]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To use this website, simply navigate to the homepage and you will see a list of customers. You can filter customers by query in the "Search" field.
 
-### `npm test`
+## Contributing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If you would like to contribute to this website, please follow these guidelines:
 
-### `npm run build`
+1. Fork the repository.
+2. Create a new branch: git checkout -b my-new-branch
+3. Make your changes and commit them: git commit -am 'Add some feature'
+4. Push to the branch: git push origin my-new-branch
+5. Create a new Pull Request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Credits
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This website was created using React. The icons used in this website were provided by Font Awesome.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions, concerns, or feedback, please contact Nastya Koptilova at [koptilova.nastya@gmail.com].
