@@ -15,6 +15,28 @@
   color: #9197b3;
   position: relative;
 
+  &:hover,
+  :focus {
+    background-color: #5932ea;
+    border-radius: 8px;
+    cursor: pointer;
+
+    .sidebar__icon path {
+      fill: #ffffff;
+    }
+    .sidebar__icon_income path {
+      stroke: #ffffff;
+    }
+
+    .sidebar__link_text {
+      color: #ffffff;
+    }
+
+    .sidebar__icon_arrow path {
+      stroke: #ffffff;
+    }
+  }
+
   &:not(:last-child) {
     margin-bottom: 18px;
   }

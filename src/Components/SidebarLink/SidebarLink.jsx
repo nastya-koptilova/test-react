@@ -23,7 +23,7 @@ export const SidebarLink = () => {
         <a className={s.sidebar__link} href="#">
           <div className={s.sidebar__link_container}>
             <CustomerIcon
-              className={`${s.sidebar__icon} ${s.sidebar__icon_active}`}
+              className={s.sidebar__icon_active}
             />
             <p
               className={`${s.sidebar__link_text} ${s.sidebar__link_text_active}`}
@@ -39,7 +39,7 @@ export const SidebarLink = () => {
       <li className={s.sidebar__item}>
         <a className={s.sidebar__link} href="#">
           <div className={s.sidebar__link_container}>
-            <IncomeIcon className={s.sidebar__icon} />
+            <IncomeIcon className={s.sidebar__icon_income} />
             <p className={s.sidebar__link_text}>Income</p>
           </div>
           <ArrowIcon className={s.sidebar__icon_arrow} />
