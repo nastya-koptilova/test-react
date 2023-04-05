@@ -7,10 +7,14 @@ import s from "./CustomersList.module.scss";
 
 export const CustomersList = ({ user }) => {
   const [search, setSearch] = useState("");
+  const [isActive, setIsActive] = useState(false);
 
-  const handleSearchCustomers = (event) => {
-    const value = event.target.value;
+  const handleSearchCustomers = (value) => {
     setSearch(value);
+  };
+
+  const handleActiveCustomers = () => {
+    isActive ? setIsActive(false) : setIsActive(true);
   };
 
   return (
@@ -19,15 +23,21 @@ export const CustomersList = ({ user }) => {
       <div className={s.customers__container}>
         <div className={s.customers__description_container}>
           <h3 className={s.customers__title}>All Customers</h3>
-          <p className={s.customers__description}>Active Members</p>
-          <CustomersSearch onChange={handleSearchCustomers}/>
+          <button
+            type="button"
+            className={s.customers__active}
+            onClick={handleActiveCustomers}
+          >
+            Active Members
+          </button>
+          <CustomersSearch handleChange={handleSearchCustomers} />
         </div>
-        <CustomersTable searchValue={search}/>
+        <CustomersTable active={isActive} searchValue={search} />
         <div className={s.customers__pages}>
           <p className={s.customers__pages_text}>
             Showing data 1 to 8 of 256K entries
           </p>
-          <PaginationBtn/>
+          <PaginationBtn />
         </div>
       </div>
     </div>

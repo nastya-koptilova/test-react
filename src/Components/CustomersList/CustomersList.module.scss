@@ -40,12 +40,19 @@
   }
 }
 
-.customers__description {
+.customers__active {
   font-weight: 400;
+  background: none;
+  border: none;
+  padding: 0px;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #16c098;
+
+  &:hover, :focus {
+    color: #0c5241;
+  }
 
   @media screen and (max-width: 884px) {
     margin-bottom: 10px;

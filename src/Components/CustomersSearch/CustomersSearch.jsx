@@ -1,7 +1,11 @@
-import React from "react";
 import s from "./CustomersSearch.module.scss";
 
-export const CustomersSearch = ({handleSearchCustomers}) => {
+export const CustomersSearch = ({ handleChange }) => {
+  const handleSearchCustomers = (event) => {
+    const value = event.target.value;
+    handleChange(value);
+  };
+
   return (
     <label className={s.customers__search}>
       <input
