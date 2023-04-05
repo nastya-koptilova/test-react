@@ -19,15 +19,15 @@
 .customers__search_input {
   width: 216px;
   height: 38px;
-  background: #f9fbff;
-  border-radius: 10px;
-  outline: none;
-  border: none;
   padding: 10px 10px 10px 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: -0.01em;
+  background: #f9fbff;
   color: #b5b7c0;
 
   &::placeholder {
